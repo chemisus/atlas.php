@@ -1,0 +1,55 @@
+{
+    "d031d63402d93dce8448df9065a962a6": {
+        "@key": "d031d63402d93dce8448df9065a962a6",
+        "@tag": "1-d031d63402d93dce8448df9065a962a6",
+        "@type": "Course",
+        "@values": {
+        },
+        "@super": {
+        }
+    },
+    "e320720f2b73f11f9a48f6d9fdd5371a": {
+        "@key": "e320720f2b73f11f9a48f6d9fdd5371a",
+        "@tag": "1-e320720f2b73f11f9a48f6d9fdd5371a",
+        "@type": "Professor",
+        "@values": {
+        },
+        "@super": {
+        },
+        "name": "Terrence Howard"
+    },
+    "bde103465efb092a169e3e61c473f0ef": {
+        "@key": "bde103465efb092a169e3e61c473f0ef",
+        "@tag": "1-bde103465efb092a169e3e61c473f0ef",
+        "@type": "Student",
+        "@values": {
+        },
+        "@super": {
+        },
+        "name": "Jessica McWaters"
+    },
+    "e9dd9e663ac23f7d5c7dd3d2fda010d5": {
+        "@key": "e9dd9e663ac23f7d5c7dd3d2fda010d5",
+        "@tag": "1-e9dd9e663ac23f7d5c7dd3d2fda010d5",
+        "@type": "Student",
+        "@values": {
+        },
+        "@super": {
+        },
+        "name": "Andres Silva"
+    },
+    "ee8648e3a0d80147286e90466b09813a": {
+        "@key": "ee8648e3a0d80147286e90466b09813a",
+        "@tag": "1-ee8648e3a0d80147286e90466b09813a",
+        "@type": "Lecture",
+        "@values": {
+        },
+        "@super": {
+        },
+        "course": {"@ref": "d031d63402d93dce8448df9065a962a6"},
+        "professor": {"@ref": "e320720f2b73f11f9a48f6d9fdd5371a"},
+        "students": [
+            {"@ref": "e9dd9e663ac23f7d5c7dd3d2fda010d5"}
+        ]
+    }
+}
