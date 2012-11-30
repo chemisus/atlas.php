@@ -1,6 +1,10 @@
 <?php
 
-class Query implements \ArrayAccess, \Countable, \IteratorAggregate {
+namespace atlas;
+
+use \ArrayAccess, \Countable, \IteratorAggregate;
+
+class Query implements ArrayAccess, Countable, IteratorAggregate {
     protected $value;
     
     private $repository;
@@ -156,6 +160,6 @@ class Query implements \ArrayAccess, \Countable, \IteratorAggregate {
     }
 
     public function getIterator() {
-        return new \QueryIterator($this->value, $this->repository);
+        return new QueryIterator($this->value, $this->repository);
     }
 }

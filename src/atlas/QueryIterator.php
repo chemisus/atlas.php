@@ -1,5 +1,7 @@
 <?php
 
+namespace atlas;
+
 class QueryIterator implements \Iterator {
     private $array;
     
